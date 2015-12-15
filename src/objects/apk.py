@@ -5,13 +5,13 @@ class APK(JAR):
         queried_count=None, create_date=None, compress_type=None, create_system=None, create_version=None,
         extract_version=None, manifest_java_version=None, signfile_java_version=None, manifest_version=None,
         signfile_version=None, classpath=None, manifest_vendor=None, signfile_vendor=None, has_enveloped_data=None,
-        certs=None, inner_files=None, android_version=None, package_name=None, permissions=None, activities=None,
-        services=None, receivers=None, providers=None
+        certs=None, inner_files=None, potential_malware=None, android_version=None, package_name=None, permissions=None,
+        activities=None, services=None, receivers=None, providers=None
     ):
-        super(APK, self).__init__(md5, sha1, sha256, last_viewed, queried_count, object_uploads, signatures,
+        super(APK, self).__init__(md5, sha1, sha256, object_uploads, signatures, last_viewed, queried_count,
             create_date, compress_type, create_system, create_version, extract_version, manifest_java_version,
             signfile_java_version, manifest_version, signfile_version, classpath, manifest_vendor, signfile_vendor,
-            has_enveloped_data, certs)
+            has_enveloped_data, certs, inner_files, potential_malware)
 
         self.android_version =      android_version                 # Android version
         self.package_name =         package_name                    # Package name

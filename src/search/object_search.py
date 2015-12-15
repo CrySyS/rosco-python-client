@@ -36,6 +36,7 @@ class JARSearch(BaseObjectSearch):
 
 class APKSearch(BaseObjectSearch):
     class Filters(object):
+        filename =                  'filename'
         hash =                      'hash'
         vendor =                    'vendor'
         potential_malware =         'potential_malware'
