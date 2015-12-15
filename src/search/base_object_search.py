@@ -25,3 +25,4 @@ class BaseObjectSearch(object):
 
         filter = Filter(prefix, start, stop, substring)
         setattr(self, name, filter)
+        return self
